@@ -1,0 +1,21 @@
+/*font for the entire website*/
+body {
+  background-color:
+  font-weight: 400;
+  font-family: 'Muli','san-serif';
+}
+
+/*how to get 2 different colours for navigation and logo for 2 different pages?*/
+
+/*logo styling*/
+/*another font family for the logo*/
+
+
+/*nav styling*/
+header nav ul li {
+  list-style: none;
+}
+
+/*placeholders for home page thumbnails*/
+
+/*hover styling for thumbnails*/
