@@ -3,6 +3,7 @@ body {
   background-color:
   font-weight: 400;
   font-family: 'Muli','san-serif';
+  font-size: 0.625em;
 }
 
 /*how to get 2 different colours for navigation and logo for 2 different pages?*/
@@ -12,9 +13,42 @@ body {
 
 
 /*nav styling*/
+header nav ul {
+  display:flex;
+}
 header nav ul li {
   list-style: none;
+  font-size: 1.8em;
+  color:#ffffff;
+  display:inline;
 }
+
+/*centralize website*/
+.container{
+  width:100%;
+  margin:0 auto;
+  padding:0px;
+}
+
+.logo{
+font-family: 'PT Serif', serif;
+font-size:6em;
+font-weight: 700;
+text-align: center;
+color:#ffffff;
+}
+
+/*home page style*/
+#homebackground{
+  background: url(../images/background.jpg) no-repeat top center;
+  background-size:cover;
+  padding:0px;
+}
+
+/*works page style*/
+
+/*about page style*/
+
 
 /*placeholders for home page thumbnails*/
 
