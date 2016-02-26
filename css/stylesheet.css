@@ -1,6 +1,6 @@
 /*font for the entire website*/
 body {
-  background-color:
+  background-color:#e5eff0;
   font-weight: 400;
   font-family: 'Muli','san-serif';
   font-size: 0.625em;
@@ -13,14 +13,29 @@ body {
 
 
 /*nav styling*/
-header nav ul {
+header nav ul{
   display:flex;
 }
+
 header nav ul li {
   list-style: none;
   font-size: 1.8em;
   color:#ffffff;
   display:inline;
+  justify-content: space-between;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color:#ffffff;
+}
+
+header nav ul li a:hover{
+  text-decoration: underline;
+}
+
+.selectednav{
+  text-decoration:underline;
 }
 
 /*centralize website*/
@@ -31,21 +46,31 @@ header nav ul li {
 }
 
 .logo{
-font-family: 'PT Serif', serif;
-font-size:6em;
-font-weight: 700;
-text-align: center;
-color:#ffffff;
+  display:block;
+  margin:auto;
 }
 
 /*home page style*/
 #homebackground{
-  background: url(../images/background.jpg) no-repeat top center;
-  background-size:cover;
+  background: url(../images/background.jpg) no-repeat top center fixed;
+  background-size: cover;
   padding:0px;
 }
 
+header p{
+  width:40%;
+  font-size:2em;
+  color:#fff;
+  text-align: center;
+  margin: auto;
+  padding:250px 100px;
+
+}
 /*works page style*/
+.placeholder {
+  width:25%;
+  background-color: blue;
+}
 
 /*about page style*/
 
