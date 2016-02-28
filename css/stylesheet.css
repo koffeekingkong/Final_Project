@@ -8,21 +8,34 @@ body {
 
 /*how to get 2 different colours for navigation and logo for 2 different pages?*/
 
-/*logo styling*/
-/*another font family for the logo*/
-
 
 /*nav styling*/
-header nav ul{
+
+.logo{
+  margin:auto;
+}
+
+header{
   display:flex;
+}
+
+header nav{
+  display:flex;
+  width:100%;
+  padding:50px 0 50px 0;
+  align-items: center; /*centers the nav text vertically*/
+  justify-content: center;  /*moves the logo and nav into center*/
+
 }
 
 header nav ul li {
   list-style: none;
   font-size: 1.8em;
   color:#ffffff;
-  display:inline;
-  justify-content: space-between;
+  flex-direction: row;
+
+  padding-right:100px;
+  padding-left:100px;
 }
 
 header nav ul li a{
@@ -41,14 +54,10 @@ header nav ul li a:hover{
 /*centralize website*/
 .container{
   width:100%;
-  margin:0 auto;
+  margin:auto;
   padding:0px;
 }
 
-.logo{
-  display:block;
-  margin:auto;
-}
 
 /*home page style*/
 #homebackground{
@@ -66,15 +75,53 @@ header p{
   padding:250px 100px;
 
 }
-/*works page style*/
-.placeholder {
-  width:25%;
-  background-color: blue;
+
+/*placeholders for works page thumbnails*/
+.work-thumbnail p{
+  position: absolute;
+  top: 0;
+  right: 0;
+  border:1px solid red;
 }
 
+.work-thumbnail {
+  width:25%;
+  position: relative;
+  float: left;
+  cursor: pointer;
+}
+
+.work-thumbnail img{ /*define that the image size is 100% so that it can be scaled in the previous level*/
+  width:100%;
+  height:100%;
+}
+
+.work-thumbnail:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(6,34,76, 0.9);
+  transition: all .3s linear;
+}
+
+.work-thumbnail:hover:before{
+  background: none;
+}
+
+.work-thumbnail:hover p{
+  display:none;
+}
+
+/*.work-thumbnail2{
+  background: rgba(6,34,76, 0.2);
+  transition: all .3s linear;
+}*/
+
+
+/*hover styling for works thumbnails*/
+
 /*about page style*/
-
-
-/*placeholders for home page thumbnails*/
-
-/*hover styling for thumbnails*/
