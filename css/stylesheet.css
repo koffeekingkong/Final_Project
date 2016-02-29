@@ -25,7 +25,6 @@ header nav{
   padding:50px 0 50px 0;
   align-items: center; /*centers the nav text vertically*/
   justify-content: center;  /*moves the logo and nav into center*/
-
 }
 
 header nav ul li {
@@ -33,7 +32,6 @@ header nav ul li {
   font-size: 1.8em;
   color:#ffffff;
   flex-direction: row;
-
   padding-right:100px;
   padding-left:100px;
 }
@@ -66,29 +64,32 @@ header nav ul li a:hover{
   padding:0px;
 }
 
-header p{
+#home-text{
   width:40%;
   font-size:2em;
   color:#fff;
   text-align: center;
   margin: auto;
-  padding:250px 100px;
+  padding-top:200px;
 
 }
 
 /*placeholders for works page thumbnails*/
-.work-thumbnail p{
-  position: absolute;
-  top: 0;
-  right: 0;
-  border:1px solid red;
-}
 
-.work-thumbnail {
+.work-thumbnail{
   width:25%;
   position: relative;
-  float: left;
+  float:left;
   cursor: pointer;
+}
+
+.work-title{
+  font-size:2em;
+  color:#fff;
+  position: absolute;
+  top:145px;
+  width:99%;
+  text-align: center;
 }
 
 .work-thumbnail img{ /*define that the image size is 100% so that it can be scaled in the previous level*/
@@ -104,7 +105,7 @@ header p{
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(6,34,76, 0.9);
+  background: rgba(6,34,76, 0.6);
   transition: all .3s linear;
 }
 
@@ -113,13 +114,8 @@ header p{
 }
 
 .work-thumbnail:hover p{
-  display:none;
-}
-
-/*.work-thumbnail2{
-  background: rgba(6,34,76, 0.2);
-  transition: all .3s linear;
-}*/
+    display:none;
+  }
 
 
 /*hover styling for works thumbnails*/
