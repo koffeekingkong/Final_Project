@@ -1,8 +1,9 @@
 /*font for the entire website*/
+
 body {
-  background-color:#e5eff0;
+  background-color: #c7d6df;
   font-weight: 400;
-  font-family: 'Muli','san-serif';
+  font-family: 'Muli', 'san-serif';
   font-size: 0.625em;
 }
 
@@ -11,92 +12,130 @@ body {
 
 /*nav styling*/
 
-.logo{
-  margin:auto;
+.logo {
+  margin: auto;
 }
-
-header{
-  display:flex;
+header {
+  display: flex;
 }
-
-header nav{
-  display:flex;
-  width:100%;
-  padding:50px 0 50px 0;
-  align-items: center; /*centers the nav text vertically*/
-  justify-content: center;  /*moves the logo and nav into center*/
+header nav {
+  display: flex;
+  width: 100%;
+  padding: 50px 0 50px 0;
+  align-items: center;
+  /*centers the nav text vertically*/
+  justify-content: center;
+  /*moves the logo and nav into center*/
 }
-
 header nav ul li {
   list-style: none;
   font-size: 1.8em;
-  color:#ffffff;
+  color: #ffffff;
   flex-direction: row;
-  padding-right:100px;
-  padding-left:100px;
+  padding-right: 100px;
+  padding-left: 100px;
 }
-
-header nav ul li a{
+header nav ul li a {
   text-decoration: none;
-  color:#ffffff;
+  color: #ffffff;
 }
-
-header nav ul li a:hover{
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+.selectednav {
   text-decoration: underline;
 }
 
-.selectednav{
-  text-decoration:underline;
-}
-
 /*centralize website*/
-.container{
-  width:100%;
-  margin:auto;
-  padding:0px;
-}
 
+.container {
+  width: 100%;
+  margin: auto;
+  padding: 0px;
+}
 
 /*home page style*/
-#homebackground{
+
+#homebackground {
   background: url(../images/background.jpg) no-repeat top center fixed;
   background-size: cover;
-  padding:0px;
+  padding: 0px;
 }
-
-#home-text{
-  width:40%;
-  font-size:2em;
-  color:#fff;
+#home-text {
+  width: 40%;
+  font-size: 2em;
+  color: #fff;
   text-align: center;
   margin: auto;
-  padding-top:200px;
-
+  padding-top: 200px;
 }
 
 /*placeholders for works page thumbnails*/
 
-.work-thumbnail{
-  width:25%;
+.projects {
+  margin: 0;
+  width: 100%;
+
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+.ynot {
+  margin: auto;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+
+}
+.description {
+  font-size: 1.5em;
+  line-height: 120%;
+  width: 30%;
+  /*vertical-align: text-top;*/
+  margin: 0;
+  justify-content: space-between;
+}
+
+.projectimages {
+  width:70%;
+}
+
+.projectimages img {
+  padding: 30px;
+  width:70%;
+  vertical-align:top;
+  display: block;
+}
+#ynot-click {
+  margin: auto;
+}
+.hide {
+  display: none;
+}
+
+/*hover styling for works thumbnails*/
+
+.work-thumbnail {
+  width: 25%;
   position: relative;
-  float:left;
+  float: left;
   cursor: pointer;
 }
-
-.work-title{
-  font-size:2em;
-  color:#fff;
+.work-title {
+  font-size: 2em;
+  color: #fff;
   position: absolute;
-  top:145px;
-  width:99%;
+  top: 145px;
+  width: 99%;
   text-align: center;
 }
-
-.work-thumbnail img{ /*define that the image size is 100% so that it can be scaled in the previous level*/
-  width:100%;
-  height:100%;
+.work-thumbnail img {
+  /*define that the image size is 100% so that it can be scaled in the previous level*/
+  width: 100%;
+  height: 100%;
 }
-
 .work-thumbnail:before {
   content: "";
   display: block;
@@ -105,19 +144,27 @@ header nav ul li a:hover{
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(6,34,76, 0.6);
+  background: rgba(6, 34, 76, 0.6);
   transition: all .3s linear;
 }
-
-.work-thumbnail:hover:before{
+.work-thumbnail:hover:before {
   background: none;
 }
-
-.work-thumbnail:hover p{
-    display:none;
-  }
-
-
-/*hover styling for works thumbnails*/
+.work-thumbnail:hover p {
+  display: none;
+}
 
 /*about page style*/
+
+.about {
+  margin: 0;
+  width: 100%;
+}
+#about-text {
+  width: 30%;
+  padding: 30px;
+}
+#about-image img {
+  width: 50%;
+  padding: 30px;
+}
