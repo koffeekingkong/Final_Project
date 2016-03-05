@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-  $("nav figure").click(function(){
+  $("section figure").click(function(){
     var projectid = $(this)[0].id;
     // showing project id that is up till my -
     projectid = projectid.substr(0, projectid.indexOf('-'));
