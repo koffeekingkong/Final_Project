@@ -73,7 +73,7 @@ header nav ul li a:hover {
 /*placeholders for works page thumbnails*/
 
 .projects {
-  margin: 0;
+  margin: 0 ;
   width: 100%;
 
 }
@@ -82,9 +82,8 @@ h1 {
   font-weight: 400;
   padding-bottom: 30px;
 }
-.ynot {
-  margin: auto;
-  width: 100%;
+.project {
+  margin: 0 auto;
   padding: 40px;
   display: flex;
 
@@ -93,26 +92,16 @@ h1 {
   font-size: 1.5em;
   line-height: 120%;
   width: 30%;
-  /*vertical-align: text-top;*/
-  margin: 0;
   justify-content: space-between;
 }
-
-.projectimages {
-  width:70%;
-}
-
 .projectimages img {
-  padding: 30px;
+  padding:20px;
   width:70%;
-  vertical-align:top;
   display: block;
 }
-#ynot-click {
-  margin: auto;
-}
-.hide {
-  display: none;
+
+.projects > * {
+  display:none;
 }
 
 /*hover styling for works thumbnails*/
