@@ -93,15 +93,18 @@ h1 {
 .description {
   font-size: 1.5em;
   line-height: 120%;
+  padding-right:50px;
   width: 30%;
   justify-content: space-between;
 
 }
 .projectimages img {
   padding:20px;
+  width:100%;
   display: block;
 }
 
+/*selecting everything under projects class*/
 .projects > * {
   display:none;
 }
@@ -149,17 +152,19 @@ h1 {
 }
 
 /*about page style*/
-
-.about {
-  margin: 0;
-  width: 100%;
-  display:inline-block;
+.about{
+  width:100%;
+  display:flex;
 }
 .about-text {
   padding: 30px;
+  font-size: 1.5em;
+  line-height: 120%;
+  padding-right:50px;
 }
+
 .about-image img {
-  width: 30%;
+  margin:0 auto;
+  width: 40%;
   padding: 30px;
-  margin:auto;
 }
